@@ -13,8 +13,21 @@ const Articles = ({ data, isFetching }) => {
       {isFetching && 'Fetching articles...'}
       {data.map((article) => (
         <div key={article.id} className='card'>
-          <div key={2}>{article.title}</div>
-          <div key={3}>{article.description}</div>
+          {article.images.map((image) => (
+            <img
+              src={image.files.small}
+              className='card-image'
+              alt={article.title}
+            />
+          ))}
+          <div className='card-content'>
+            <h2 className='card-title' key={2}>
+              {article.title}
+            </h2>
+            <div className='card-text' key={3}>
+              {article.description}
+            </div>
+          </div>
         </div>
       ))}
     </div>
