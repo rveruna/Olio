@@ -11,7 +11,6 @@ function App() {
         />
       </header>
       <div className='App'>
-        <SimpleTable data={data.articles} isFetching={data.isFetching} />
         <div className='App-link-container'>
           <a
             className='App-link'
