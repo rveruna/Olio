@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className='App-header'>
         <img
           src='https://olioex.com/wp-content/uploads/2019/08/logo_olio_white.png'
           className='App-logo'
