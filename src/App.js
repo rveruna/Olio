@@ -4,7 +4,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img
+          src='https://olioex.com/wp-content/uploads/2019/08/logo_olio_white.png'
+          className='App-logo'
+          alt='logo'
+        />
       </header>
     </div>
         <div className='App-link-container'>
