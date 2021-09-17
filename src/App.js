@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 //components
-import SimpleTable from './components/SimpleTable';
+import Articles from './components/Articles';
 
 // styles
 import './App.css';
@@ -35,7 +35,7 @@ function App() {
         />
       </header>
       <div className='App'>
-        <SimpleTable data={data.articles} isFetching={data.isFetching} />
+        <Articles data={data.articles} isFetching={data.isFetching} />
         <div className='App-link-container'>
           <a
             className='App-link'
