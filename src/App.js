@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header className='App-header'>
         <img
           src='https://olioex.com/wp-content/uploads/2019/08/logo_olio_white.png'
@@ -10,7 +10,8 @@ function App() {
           alt='logo'
         />
       </header>
-    </div>
+      <div className='App'>
+        <SimpleTable data={data.articles} isFetching={data.isFetching} />
         <div className='App-link-container'>
           <a
             className='App-link'
@@ -21,6 +22,8 @@ function App() {
             GitHub link | Veronika Rosicova
           </a>
         </div>
+      </div>
+    </>
   );
 }
 
