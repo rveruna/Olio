@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 //components
-import Articles from './components/Articles';
+import Articles from './components/Articles/Articles';
 
 // styles
 import './App.css';
