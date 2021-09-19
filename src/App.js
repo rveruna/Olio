@@ -4,12 +4,11 @@ import axios from 'axios';
 //components
 import Articles from './components/Articles/Articles';
 
-// styles
-import './App.css';
-
 const ARTICLES_URL =
   'https://s3-eu-west-1.amazonaws.com/olio-staging-images/developer/test-articles-v4.json';
+import './styles/App.css';
 import Header from './layouts/Header';
+import Page from './layouts/Page';
 import Footer from './layouts/Footer';
 
 function App() {
@@ -32,6 +31,9 @@ function App() {
       <div className='App'>
         <Articles data={data.articles} isFetching={data.isFetching} />
         <header>{<Header />}</header>
+        <main>
+          <section className='page'>{<Page />}</section>
+        </main>
         <footer>{<Footer />}</footer>
       </div>
     </>
