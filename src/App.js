@@ -9,6 +9,7 @@ import './App.css';
 
 const ARTICLES_URL =
   'https://s3-eu-west-1.amazonaws.com/olio-staging-images/developer/test-articles-v4.json';
+import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 
 function App() {
@@ -28,15 +29,9 @@ function App() {
   }, []);
   return (
     <>
-      <header className='App-header'>
-        <img
-          src='https://olioex.com/wp-content/uploads/2019/08/logo_olio_white.png'
-          className='App-logo'
-          alt='logo'
-        />
-      </header>
       <div className='App'>
         <Articles data={data.articles} isFetching={data.isFetching} />
+        <header>{<Header />}</header>
         <footer>{<Footer />}</footer>
       </div>
     </>
