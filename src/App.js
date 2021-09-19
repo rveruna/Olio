@@ -9,6 +9,7 @@ import './App.css';
 
 const ARTICLES_URL =
   'https://s3-eu-west-1.amazonaws.com/olio-staging-images/developer/test-articles-v4.json';
+import Footer from './layouts/Footer';
 
 function App() {
   const [data, setData] = useState({ articles: [], isFetching: false });
@@ -36,16 +37,7 @@ function App() {
       </header>
       <div className='App'>
         <Articles data={data.articles} isFetching={data.isFetching} />
-        <div className='App-link-container'>
-          <a
-            className='App-link'
-            href='https://github.com/rveruna/Olio'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            GitHub link | Veronika Rosicova
-          </a>
-        </div>
+        <footer>{<Footer />}</footer>
       </div>
     </>
   );
