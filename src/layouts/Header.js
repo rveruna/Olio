@@ -13,13 +13,13 @@ const Header = () => {
       </NavLink>
       <Switch>
         <NavMenu>
-          <NavLink activeStyle to='/' exact>
+          <NavLink to='/' exact>
             Home
           </NavLink>
-          <NavLink activeStyle to='/articles' exact>
+          <NavLink to='/articles' exact>
             Articles
           </NavLink>
-          <NavLink activeStyle to='/contact' exact>
+          <NavLink to='/contact' exact>
             Contact
           </NavLink>
         </NavMenu>
