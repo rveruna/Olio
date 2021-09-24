@@ -48,3 +48,19 @@ a:visited .card {
 .card-text {
   margin-top: 5px;
 }
+
+@media (max-width: 800px) {
+  .card-image {
+    height: 100px;
+    min-height: 100px;
+    min-width: 100px;
+    object-fit: cover;
+    width: 100px;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .card-text {
+    display: none;
+  }
+}
